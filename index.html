@@ -96,6 +96,8 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#install-in-5-minutes">Install in 5 minutes</a></li>
+        <li class="main "><a href="#features">Features</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -103,6 +105,7 @@
 <p><img alt="pygeoapi logo" src="img/pygeoapi-logo.png" title="pygeoapi logo" /></p>
 <h4>pygeoapi is a Python server implementation of the <a href="https://www.opengeospatial.org/blog/2996">OGC API suite of standards</a>. The project emerged as part of the next generation OGC API efforts in 2018 and provides the capability for organizations to deploy an RESTful OGC API endpoint using OpenAPI, GeoJSON, and HTML. pygeoapi is <a href="https://opensource.org">open source</a> and released under an <a href="https://github.com/geopython/pygeoapi/blob/master/LICENSE.md">MIT license</a>. <a title="OSGeo Community Project" href="https://osgeo.org"><img alt="OSGeo Community Project" src="https://raw.githubusercontent.com/OSGeo/osgeo/master/incubation/community/OSGeo_community.png" height="64"/></a></h4>
 
+<h2 id="install-in-5-minutes">Install in 5 minutes</h2>
 <pre><code class="python">python3 -m venv pygeoapi
 cd pygeoapi
 . bin/activate
@@ -119,131 +122,20 @@ pygeoapi serve
 curl http://localhost:5000
 </code></pre>
 
-<pre><code>    &lt;br /&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="row justify-content-center"&gt;
-            &lt;div class="col-6"&gt;
-                At a glance:
-                &lt;ul&gt;
-                    &lt;li&gt;Easy to install: install a full implementation via pip or git&lt;/li&gt;
-                    &lt;li&gt;Easy to deploy: via UbuntuGIS or the official Docker image&lt;/li&gt;
-                    &lt;li&gt;Flexible: built on a robust plugin framework
-                        &lt;ul&gt;
-                            &lt;li&gt;connect to custom data sources (files, services, databases, etc.)&lt;/li&gt;
-                            &lt;li&gt;serve custom output formats&lt;/li&gt;
-                            &lt;li&gt;implement custom processes and workflows&lt;/li&gt;
-                            &lt;li&gt;deploy via Flask, Django, or any Python framework&lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;li&gt;Compliant: passes OGC Compliance testing&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;br /&gt;
-
-    &lt;div class="d-flex flex-row flex-wrap justify-content-center"&gt;
-        &lt;div class="p-2"&gt;
-            &lt;div class="card" style="width: 18rem;"&gt;
-                &lt;div class="card-body"&gt;
-                    &lt;h5 class="card-title text-center"&gt;&lt;strong&gt;Code and Docs&lt;/strong&gt;&lt;/h5&gt;
-                    &lt;h6 class="card-subtitle mb-2 text-muted text-center"&gt;GitHub repository&lt;/h6&gt;
-                    &lt;p class="card-text text-center"&gt;Code repository and docs&lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://github.com/geopython/pygeoapi" target="_blank"
-                            class="card-link text-center"&gt;GitHub&lt;/a&gt;
-                    &lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://docs.pygeoapi.io" target="_blank" class="card-link text-center"&gt;Docs&lt;/a&gt;
-                        &lt;a href="presentations/default/index.html" target="_blank"
-                            class="card-link text-center"&gt;Presentation&lt;/a&gt;
-                        &lt;a href="https://media.ccc.de/v/bucharest-32-next-generation-ogc-web-services-with-pygeoapi" target="_blank"
-                            class="card-link text-center"&gt;Video&lt;/a&gt;
-                    &lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;&lt;!-- end p-2 --&gt;
-        &lt;div class="p-2"&gt;
-        &lt;div class="card" style="width: 18rem;"&gt;
-                &lt;div class="card-body"&gt;
-                    &lt;h5 class="card-title text-center"&gt;&lt;strong&gt;Demo&lt;/strong&gt;&lt;/h5&gt;
-                    &lt;h6 class="card-subtitle mb-2 text-muted text-center"&gt;Live demonstration&lt;/h6&gt;
-                    &lt;p class="card-text text-center"&gt;Demonstration of pygeoapi in action&lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://demo.pygeoapi.io" target="_blank"
-                            class="card-link text-center"&gt;demo.pygeoapi.io&lt;/a&gt;
-                    &lt;/p&gt;
-                &lt;/div&gt;
-        &lt;/div&gt; &lt;!--  end card --&gt;
-        &lt;/div&gt;
-        &lt;div class="p-2"&gt;
-        &lt;div class="card" style="width: 18rem;"&gt;
-                &lt;div class="card-body"&gt;
-                    &lt;h5 class="card-title text-center"&gt;&lt;strong&gt;Docker images&lt;/strong&gt;&lt;/h5&gt;
-                    &lt;h6 class="card-subtitle mb-2 text-muted text-center"&gt;Images hosted in Docker Hub&lt;/h6&gt;
-                    &lt;p class="card-text text-center"&gt;Docker images/composition to run pygeoapi&lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://hub.docker.com/r/geopython/pygeoapi" target=""
-                            class="card-link text-center"&gt;Docker Hub&lt;/a&gt;
-                    &lt;/p&gt;
-                &lt;/div&gt;
-        &lt;/div&gt; &lt;!--  end card --&gt;           
-        &lt;/div&gt; &lt;!-- end p-2 --&gt;
-    &lt;/div&gt; &lt;!-- end flex-row --&gt;
-    &lt;div class="d-flex flex-row flex-wrap justify-content-center"&gt;
-    &lt;div class="p-2"&gt;
-    &lt;div class="card" style="width: 18rem;"&gt;
-                &lt;div class="card-body"&gt;
-                    &lt;h5 class="card-title text-center"&gt;&lt;strong&gt;WFS 3.0&lt;/strong&gt;&lt;/h5&gt;
-                    &lt;h6 class="card-subtitle mb-2 text-muted text-center"&gt;Proto-WFS 3.0 docs&lt;/h6&gt;
-                    &lt;p class="card-text text-center"&gt;Live documentation of future WFS 3.0 standard&lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://github.com/opengeospatial/WFS_FES" target="_blank"
-                            class="card-link text-center"&gt;WFS 3.0 repository&lt;/a&gt;
-                    &lt;/p&gt;
-                &lt;/div&gt;
-        &lt;/div&gt; &lt;!--  end card --&gt;
-    &lt;/div&gt; &lt;!-- end p-2 --&gt;
-
-    &lt;div class="p-2"&gt;
-    &lt;div class="card" style="width: 18rem;"&gt;
-                &lt;div class="card-body"&gt;
-                    &lt;h5 class="card-title text-center"&gt;&lt;strong&gt;Client Tools&lt;/strong&gt;&lt;/h5&gt;
-                    &lt;h6 class="card-subtitle mb-2 text-muted text-center"&gt;WFS clients&lt;/h6&gt;
-                    &lt;p class="card-text text-center"&gt;Client tools to work with WFS 3.0&lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://gdal.org/drv_wfs3.html" target="_blank"
-                            class="card-link text-center"&gt;GDAL driver&lt;/a&gt;
-                    &lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://geopython.github.io/OWSLib/#wfs-3-0" target="_blank"
-                            class="card-link text-center"&gt;OWSLib&lt;/a&gt;
-                    &lt;/p&gt;
-                &lt;/div&gt;
-        &lt;/div&gt; &lt;!--  end card --&gt;
-    &lt;/div&gt; &lt;!-- end p-2 --&gt;
-
-    &lt;div class="p-2"&gt;
-    &lt;div class="card" style="width: 18rem;"&gt;
-                &lt;div class="card-body"&gt;
-                    &lt;h5 class="card-title text-center"&gt;&lt;strong&gt;Community&lt;/strong&gt;&lt;/h5&gt;
-                    &lt;h6 class="card-subtitle mb-2 text-muted text-center"&gt;Support&lt;/h6&gt;
-                    &lt;p class="card-text text-center"&gt;Talk to the developers or help us with code and suggestions&lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://gitter.im/geopython/pygeoapi" target="_blank"
-                            class="card-link text-center"&gt;Gitter&lt;/a&gt;
-                    &lt;/p&gt;
-                    &lt;p class="card-text text-center"&gt;
-                        &lt;a href="https://lists.osgeo.org/mailman/listinfo/pygeoapi" target="_blank"
-                            class="card-link text-center"&gt;Mailing list&lt;/a&gt;
-                    &lt;/p&gt;
-                &lt;/div&gt;
-        &lt;/div&gt; &lt;!--  end card --&gt;
-    &lt;/div&gt; &lt;!-- end p-2 --&gt;
-
-    &lt;/div&gt; &lt;!-- end flex-row --&gt;
-
-&lt;/div&gt;&lt;!-- end main-page --&gt;
-</code></pre></div>
+<h2 id="features">Features</h2>
+<p>At a glance:</p>
+<ul>
+<li>Easy to install: install a full implementation via pip or git</li>
+<li>Easy to deploy: via UbuntuGIS or the official Docker image</li>
+<li>Flexible: built on a robust plugin framework<ul>
+<li>connect to custom data sources (files, services, databases, etc.)</li>
+<li>serve custom output formats</li>
+<li>implement custom processes and workflows</li>
+<li>deploy via Flask, Django, or any Python framework</li>
+</ul>
+</li>
+<li>Compliant: passes OGC Compliance testing</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -327,5 +219,5 @@ curl http://localhost:5000
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-10-09 15:59:23
+Build Date UTC : 2019-10-09 16:52:16
 -->
